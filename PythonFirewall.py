@@ -36,7 +36,23 @@ def main():
         ip_address = generate_random_ip()
         action = check_firewall_rules(ip_address, firewall_rules)
         random_number = random.randint(0, 9999)
-        print(f"IP: {ip_address}, Action: {action}, Random: {random_number}")
+        print(f"IP: {ip_address}, Action: {action}, Identifier: {random_number}")
 
 if __name__ == "__main__":
     main()
+
+
+
+#Example Output:
+#IP: 192.168.1.12, Action: allow, Identifier: 1002
+#IP: 192.168.1.5, Action: allow, Identifier: 2044
+#IP: 192.168.1.18, Action: allow, Identifier: 5061
+#IP: 192.168.1.8, Action: allow, Identifier: 4080
+#IP: 192.168.1.18, Action: allow, Identifier: 5556
+#IP: 192.168.1.19, Action: block, Identifier: 4082
+#IP: 192.168.1.8, Action: allow, Identifier: 5280
+#IP: 192.168.1.14, Action: allow, Identifier: 6655
+#IP: 192.168.1.3, Action: allow, Identifier: 1328
+#IP: 192.168.1.10, Action: allow, Identifier: 3105
+#IP: 192.168.1.8, Action: allow, Identifier: 2721
+#IP: 192.168.1.12, Action: allow, Identifier: 3060
